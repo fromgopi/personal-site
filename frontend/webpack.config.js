@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     mode: "development",
-    entry: "src/index.js",
+    entry: "/src/index.js",
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: "/"
@@ -13,7 +13,7 @@ module.exports = {
             // For Js.
             {
                 test: /\.?js$/,
-                exclude: /node_modules/,
+                exclude: path.resolve(__dirname, "node_modules"),
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -24,11 +24,9 @@ module.exports = {
             // For Css
             {
                 test: /\.?css$/,
-                loader: ["style-loader", "css-loader"],
-                options: {
-                    url: true,
-                    import: true
-                }
+                use: [
+                    "style-loader", "css-loader",
+                ],
             }
         ]
     },
