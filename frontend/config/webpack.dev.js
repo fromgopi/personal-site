@@ -13,7 +13,7 @@ module.exports = merge(common, {
     devServer: {
         historyApiFallback: true,
         static:{
-            directory:  path.build  
+            directory:  path.build 
         },
         open: true,
         compress: true,
