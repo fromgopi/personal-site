@@ -15,7 +15,7 @@ module.exports = {
         path: path.build,
         filename: "[name].bundle.js",
         publicPath: "/"
-    },      
+    },     
     module: {
         rules: [
             // JS Rules
