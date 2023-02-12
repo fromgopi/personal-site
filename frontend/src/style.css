@@ -3,5 +3,7 @@ body {
     background: #18181b;
     scroll-behavior: smooth !important;
     color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
