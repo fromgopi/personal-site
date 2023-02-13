@@ -1,0 +1,11 @@
+.Header {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    box-shadow: rgba(0,0,0,0.3) 0px 5px 10px;
+    z-index: 1000;
+}
