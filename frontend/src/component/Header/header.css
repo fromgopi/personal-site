@@ -9,3 +9,24 @@
     box-shadow: rgba(0,0,0,0.3) 0px 5px 10px;
     z-index: 1000;
 }
+
+.header-div-inner {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+.header-div .logo {
+    display: flex;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.header-div .logo img {
+    flex-basis: 100px;
+    max-width: 35px;
+}
