@@ -1,4 +1,4 @@
-.Header {
+.header {
     position: fixed;
     top: 0px;
     display: flex;
@@ -8,6 +8,7 @@
     width: 100vw;
     box-shadow: rgba(0,0,0,0.3) 0px 5px 10px;
     z-index: 1000;
+    background-color: #18181b;
 }
 
 .header-div-inner {
@@ -26,7 +27,11 @@
     cursor: pointer;
 }
 
+.logo-img {
+    max-width: 7%;
+}
+
 .header-div .logo img {
     flex-basis: 100px;
-    max-width: 35px;
+    max-width: 7%;
 }

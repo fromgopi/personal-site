@@ -1,9 +1,14 @@
 import "./header.css";
+import logo from '../../assets/icons/elephant.png';
 
 function Header() { 
     return(
-        <div className="Header">
-            <h1>Welcome to my site</h1>
+        <div className="header">
+            <div className="header-div-inner">
+                    <a className="logo">
+                        <img className="logo-img" src={logo}/>
+                    </a>
+            </div>
         </div>
     );
 }
